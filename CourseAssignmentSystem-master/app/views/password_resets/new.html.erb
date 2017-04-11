@@ -1,0 +1,17 @@
+<div class="login">
+  <div class="container", style = "height: 100%">
+    <div class="form">
+    	<div class = "intro-message"><h1 style="color:white;font-size: 4em">Course Assignment System</h1>
+    		<br></br>
+		<p>
+			<%= form_for(:password_reset, url: password_resets_path) do |f| %>
+			<div class="col-xs-4 col-xs-offset-4">
+				<p><%= f.email_field :email, :placeholder => "Enter Email", class: 'form-control' %></p>
+				<p><%= f.submit "Reset Password", class: "btn btn-primary btn-md", id: "login_btn" %></p>
+			</div>
+	         <% end %>
+		</p>
+		</div>
+    </div>
+   </div>
+</div> 
